@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post">
+        
+        <!-- Hindi=<input type="text" name="Hindi" required id=""> <br>
+        English=<input type="text" name="English" required id=""> <br>
+        Math=<input type="text" name="Math" required id=""> <br>
+        Sanskrit=<input type="text" name="Sanskrit" required id=""> <br>
+        Computer=<input type="text" name="Computer" required id=""> <br>
+        Science=<input type="text" name="Science" required id=""> <br>
+        <button type="submit" name="add">submit</button> -->
+        {% csrf_token %}
+        SHOW THE MARKSHIT <br>
+        <label>Hindi</label>
+        <input type="text" name="n1"><br>
+        <label>Math</label>
+        <input type="text" name="n2"><br>
+        <label>English</label>
+        <input type="text" name="n3"><br>
+        <label>Science</label>
+        <input type="text" name="n4"><br>
+        <label>Social Science</label>
+        <input type="text" name="n5"><br>
+        <label>Computer</label>
+        <input type="text" name="n6"><br>
+        <input type="submit" value="marksheet" name="submit">
+        
+    </form> <br>
+    <label>Output</label>
+    <input type="text" value="{{sum}}"> <br>
+    <label>parsentage</label>
+    <input type="text" value="{{par}}">
+    
+    
+</body>
+</html>
